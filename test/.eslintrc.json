@@ -1,0 +1,33 @@
+{
+  "env": {
+    "mocha": true
+  },
+  "plugins": [
+    "mocha"
+  ],
+  "rules": {
+    "node/no-unsupported-features": ["error", {
+      "version": 6,
+      "ignores": []
+    }],
+    "comma-dangle": 0,
+    "max-len": ["error", 120, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+    }],
+    "indent": ["error", 4],
+    "no-console": ["error"],
+    "no-debugger": ["error"],
+    "require-jsdoc": "off",
+    "prefer-arrow-callback": "off",
+    "func-names": "off",
+    "node/no-unpublished-require": "off",
+    "mocha/no-exclusive-tests": "error",
+    "mocha/no-identical-title": "error",
+    "mocha/max-top-level-suites": "error",
+    "mocha/handle-done-callback": "error"
+  }
+}

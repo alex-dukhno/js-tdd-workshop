@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "./node_modules/eslint-config-airbnb-base/index.js"
+  ],
+  "env": {
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "node/no-unsupported-features": ["error", {
+      "version": 8,
+      "ignores": []
+    }],
+    "comma-dangle": 0,
+    "max-len": ["error", 120, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+    }],
+    "indent": ["error", 4],
+    "no-console": ["error"],
+    "no-debugger": ["error"]
+  },
+  "plugins": ["node"]
+}
