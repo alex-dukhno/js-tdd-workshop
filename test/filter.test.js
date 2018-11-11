@@ -1,18 +1,18 @@
-/* eslint-disable no-plusplus */
+/* eslint-disable import/no-extraneous-dependencies */
 require('chai').should();
 require('mocha');
 
 
 function filter(items, k) {
     const max = [];
-    for (let i = 0; i < k; i++) {
+    for (let i = 0; i < k; i += 1) {
         max[i] = items[i];
     }
-    for (let i = 1; i < items.length; i++) {
-        let j = 0;
+    for (let i = 1; i < items.length; i += 1) {
+        const j = 0;
         while (j < k && !(items[i] <= max[j])) {
             if (!items[i] > max[j]) {
-                j++;
+                i += 1;
             }
             if (j < k) {
                 max[j] = items[i];
